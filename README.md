@@ -71,19 +71,19 @@ All low-level cryptographic functions performed within this process are using th
 
 Every FileKey user has a unique **Share Key** — a long string that acts like a public address. You can find it in the menu under **"Your Share Key."**
 
-### 📤 Sharing a File
+#### 📤 Sharing a File
 
 1. Click the **"Share"** button next to any file.
 2. Enter the recipient’s Share Key (they’ll need to provide this to you).
 3. FileKey creates a special encrypted version only that recipient can unlock. Save and send the file (ending in `.shared_filekey`) via any method — email, messaging, file transfer, etc.
 
-### 📥 Receiving a Shared File
+#### 📥 Receiving a Shared File
 
 1. Open FileKey and authenticate.
 2. Drag and drop the shared file into FileKey.
 3. FileKey detects that it’s a shared file and decrypts it using your key.
 
-### 🔐 Security Details for Sharing
+#### 🔐 Security Details for Sharing
 
 - Your private keys **never** leave your device.
 - Shared files are locked to a specific recipient.
