@@ -63,7 +63,35 @@ Using this deterministic random value, an HKDF with 256 bits of entropy is gener
 
 All low-level cryptographic functions performed within this process are using the web’s built-in SubtleCrypto interface of the Web Crypto API. All encrypted files use a unique randomly generated salt, composed of a 16 byte hash.
 
-> 🛡️ **To understand more details of the encryption process, see here.**
+> 🛡️ **To understand more details of the encryption process, [see here](how-encryption-works.md).**
+
+---
+
+### 🔁 Sharing
+
+Every FileKey user has a unique **Share Key** — a long string that acts like a public address. You can find it in the menu under **"Your Share Key."**
+
+### 📤 Sharing a File
+
+1. Click the **"Share"** button next to any file.
+2. Enter the recipient’s Share Key (they’ll need to provide this to you).
+3. FileKey creates a special encrypted version only that recipient can unlock. Save and send the file (ending in `.shared_filekey`) via any method — email, messaging, file transfer, etc.
+
+### 📥 Receiving a Shared File
+
+1. Open FileKey and authenticate.
+2. Drag and drop the shared file into FileKey.
+3. FileKey detects that it’s a shared file and decrypts it using your key.
+
+### 🔐 Security Details for Sharing
+
+- Your private keys **never** leave your device.
+- Shared files are locked to a specific recipient.
+- All encryption and decryption happen **entirely on your device** — no servers involved.
+- Files are secured with **AES-256** encryption.
+- Your Share Key does not need to be kept secret, it can be shared openly.
+
+> 🛡️ Share with confidence, knowing only your intended recipient can access the file.
 
 ---
 
@@ -77,4 +105,3 @@ All low-level cryptographic functions performed within this process are using th
 
 > **💬 [Signal Group](https://signal.group/#CjQKIDpdakX0nr1V00ciNv3dsWCFZgUwm_NylulFJz4VOUJ_EhBtY-bq759RNExzcCWMUGIB)**  
 > *(Chat with us directly)*
-
