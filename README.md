@@ -48,9 +48,9 @@ In order to use FileKey, you need a compatible password manager (Apple Passwords
 <br>
 
 > ⚠️ **Notes:**  
-> - Because 1Password doesn't properly support PRF, it appears it won't work on any platform yet.  
+> - 1Password, Proton Pass, and BitWarden won't work until they properly support PRF.  
 > - Samsung Pass has been reported to work, despite not officially supporting PRF. 
-> - Windows 10 and below do not support PRF, and thus won't work.
+> - Windows 10 and below does not support PRF, and thus won't work.
 > - Filekey will likely work with Chromium based browsers (e.g. Brave, Vivaldi, Opera)
 
 ---
